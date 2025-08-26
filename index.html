@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open Hope Charities | Love, Share and Care</title>
+  <style>
+    :root{
+      --brand:#0b5cab; /* deep blue */
+      --brand-2:#0f7ae5; /* accent blue */
+      --dark:#1d2530; 
+      --muted:#f5f7fb;
+      --text:#222;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--text);background:var(--muted)}
+    a{color:var(--brand-2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header.hero{
+      background:linear-gradient(135deg,var(--brand),#083b71), url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      color:#fff;
+      padding:64px 16px 24px;
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.15);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.3);font-weight:600;letter-spacing:.4px}
+    .hero h1{margin:12px 0 8px;font-size:clamp(28px,6vw,48px)}
+    .hero p{margin:0 0 12px;font-size:clamp(14px,2.4vw,18px)}
+    .contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .contact span{background:rgba(255,255,255,.12);padding:6px 10px;border-radius:10px}
+
+    nav.top{
+      position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e8edf5
+    }
+    nav.top .wrap{display:flex;gap:14px;align-items:center;overflow:auto}
+    nav.top a{display:block;padding:12px 10px;font-weight:600;color:var(--dark)}
+    nav.top a:hover{color:var(--brand)}
+
+    section{padding:36px 0}
+    section .card{background:#fff;border:1px solid #e8edf5;border-radius:16px;box-shadow:0 6px 20px rgba(13,35,69,.06);padding:22px}
+    h2{margin:0 0 12px;font-size:clamp(22px,3.6vw,30px);color:var(--dark)}
+    h3{margin:22px 0 6px;font-size:clamp(18px,3vw,22px);color:#213045}
+    .grid{display:grid;gap:16px}
+    @media(min-width:900px){.grid.cols-2{grid-template-columns:1fr 1fr}}
+
+    .toc{display:grid;gap:8px;margin:8px 0 16px}
+    .toc a{display:block;padding:10px 12px;border:1px solid #e8edf5;border-radius:12px;background:#fcfdff}
+
+    details{border:1px solid #e8edf5;border-radius:12px;background:#fcfdff;padding:10px 12px;margin:10px 0}
+    details summary{cursor:pointer;font-weight:700}
+
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e8edf5;border-radius:12px;overflow:hidden}
+    table th, table td{padding:10px;border-bottom:1px solid #eef2f7;text-align:left;vertical-align:top}
+    table tr:last-child td{border-bottom:none}
+
+    .note{background:#fff8e1;border:1px solid #ffe4a3;border-radius:10px;padding:10px}
+
+    footer{margin-top:40px;padding:30px 16px;background:#0c1b2a;color:#dfe7f3}
+    footer a{color:#fff;}
+
+    .toplink{position:fixed;right:16px;bottom:16px;background:var(--brand);color:#fff;border-radius:999px;padding:10px 14px;box-shadow:0 10px 18px rgba(7,35,73,.25)}
+
+    /* Print */
+    @media print{
+      nav.top,.toplink{display:none}
+      section{page-break-inside:avoid}
+      body{background:#fff}
+      .card,table{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" id="home">
+    <div class="wrap">
+      <span class="badge">LOVE • SHARE • CARE</span>
+      <h1>Open Hope Charities</h1>
+      <p><strong>THE CONSTITUTION & GROUP PROFILE</strong></p>
+      <div class="contact" aria-label="contact">
+        <span>Physical Address: Kabarwa Parish, Kabarwa Sub‑County, Bukedea District</span>
+        <span>Postal: C/o P.O. Box 5026, Bukedea</span>
+        <span>Phone: <a href="tel:+256773052417">0773 052 417</a></span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="top" aria-label="Section Navigation">
+    <div class="wrap">
+      <a href="#about">About</a>
+      <a href="#constitution">Constitution</a>
+      <a href="#articles">Articles I–XI</a>
+      <a href="#profile">Group Profile</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#registration">Registration</a>
+      <a href="#contact">Contacts</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="about">
+      <div class="grid cols-2">
+        <div class="card">
+          <h2>About Open Hope Charities</h2>
+          <p>Open Hope Charities (the “group” / “organization”) is a community‑based organization operating in Kabarwa Parish, Kabarwa Sub‑County, Bukedea District, Republic of Uganda. The organization seeks to <strong>fight poverty</strong>, improve <strong>household standards of living</strong>, and promote <strong>social‑economic transformation</strong> through savings, micro‑credit, mobilization, and community service.</p>
+          <p class="note"><strong>Motto:</strong> Love, Share and Care</p>
+        </div>
+        <div class="card">
+          <h2>Quick Facts</h2>
+          <ul>
+            <li><strong>Vision:</strong> A Transformed and Prosperous Community by 2025 (constitution) / by 2040 (profile)</li>
+            <li><strong>Mission:</strong> To fight poverty and improve household standards of living for socio‑economic transformation.</li>
+            <li><strong>Founded:</strong> 1 April 2020</li>
+            <li><strong>Coverage:</strong> Kabarwa Sub‑County (members drawn from the sub‑county)</li>
+            <li><strong>Membership:</strong> 15 members (provision up to 30 in profile)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="constitution">
+      <div class="card">
+        <h2>The Constitution</h2>
+        <p><strong>Preamble.</strong> This constitution outlines the basic rules governing the group, ensures continuity, and addresses matters arising within the organization. Members subscribe to the laws, regulations and policies of the Republic of Uganda.</p>
+        <div class="toc">
+          <a href="#articles">Jump to Articles I–XI</a>
+          <a href="#profile">Jump to Group Profile</a>
+          <a href="#leadership">Jump to Leadership</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="articles">
+      <div class="card">
+        <h2>Articles I–XI</h2>
+
+        <details open>
+          <summary>Article I – Name, Location & Association</summary>
+          <ul>
+            <li><strong>Name:</strong> Open Hope Charities</li>
+            <li><strong>Location:</strong> Kabarwa Parish, Kabarwa Sub‑County, Bukedea District</li>
+            <li><strong>Affiliations:</strong> Local and national government institutions and CSOs for networking and support aligned with the group’s vision and priorities.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Article II – Purpose (Vision, Mission, Objectives & Activities)</summary>
+          <h3>Vision</h3>
+          <p>A Transformed and Prosperous Community by 2025.</p>
+          <h3>Mission</h3>
+          <p>To fight poverty and improve the standards of living of all households in the group for socio‑economic transformation by promoting and recognizing efforts from within and without the organization.</p>
+          <h3>Objectives</h3>
+          <ol>
+            <li>Build capacity on gender, environment, household health & sanitation.</li>
+            <li>Empower community members to demand their rights and opportunities.</li>
+            <li>Improve household incomes for socio‑economic transformation and prosperity.</li>
+            <li>Be a model group that creates a difference in society.</li>
+            <li>Improve household health and sanitation.</li>
+          </ol>
+          <h3>Key Activities</h3>
+          <ol>
+            <li>Resource pooling into a sustainable saving scheme.</li>
+            <li>Community mobilization and sensitization.</li>
+            <li>Implementing income‑generating projects.</li>
+            <li>Lobby for funds to build conducive praying areas.</li>
+            <li>Routine community general cleaning campaigns.</li>
+            <li>Tree planting.</li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>Article III – Membership (Privileges, Duties & Obligations)</summary>
+          <ul>
+            <li>Membership limited to 15 members committed to the group’s rules; drawn from one sub‑county.</li>
+            <li>Entry & exit by free choice, consistent with the constitution.</li>
+            <li>Freedom of expression and equal treatment; respect for diversity and dignity.</li>
+            <li>Rumor‑mongering/propaganda prohibited; fine not less than UGX 5,000 or other penalty as appropriate.</li>
+            <li>Members must respond to calls for group activities.</li>
+          </ul>
+          <h3>Termination</h3>
+          <ol>
+            <li>Voluntary resignation.</li>
+            <li>Failure to attend five consecutive meetings without apology/reason.</li>
+            <li>Death (with option to replace by a household member).</li>
+            <li>Criminal record, dishonesty, unstable mental status, or loss of trust.</li>
+            <li>Failure to adhere to rules beyond acceptable levels.</li>
+          </ol>
+          <p>Associate/guest membership is allowed (no committee privileges); individuals of integrity, including leaders, technical staff and respected community members.</p>
+        </details>
+
+        <details>
+          <summary>Article IV – Group Revenue / Income</summary>
+          <ul>
+            <li>Registration fee (members): UGX 2,000 (non‑refundable; once).</li>
+            <li>Social fund: UGX 2,000 monthly (emergency response pool).</li>
+            <li>Optional savings: up to UGX 2,000 monthly (determines loan entitlement).</li>
+            <li>Associate registration: not less than UGX 2,000 (once).</li>
+            <li>Loan interest income: 10% on loaned funds grows loan capital.</li>
+            <li>Bank account at a recognized commercial bank; three signatories: Chairperson, General Secretary, Treasurer; transparent approvals and reporting.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Article V – Micro‑Credit Scheme</summary>
+          <ul>
+            <li>Establish a micro‑loan scheme as a primary activity.</li>
+            <li>Safe box with three locks; keys held by three different members (not the Treasurer).</li>
+            <li>Interest: not exceeding 10%; repayment within ≤ 30 days with mandatory 10% interest.</li>
+            <li>Default: confiscate assets equivalent to credit value for recovery; persistent defaults (over three times) may trigger membership termination and legal recovery consistent with Ugandan law.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Article VI – Elections</summary>
+          <ul>
+            <li>Held every five (5) years; nomination then voting (secret ballot, show of hands, or consensus).</li>
+            <li>Presided over by a neutral person (Associate member, Parish Chief, LCI/LCII Chairperson).</li>
+            <li>Unopposed nominees may be elected by consensus.</li>
+            <li>Nominees cannot vote for the position for which they are nominated.</li>
+            <li>Winners confirmed by majority of votes by number.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Article VII – Executive Committee (Duties & Responsibilities)</summary>
+          <p>Up to nine members: Chairperson, Vice Chairperson, General Secretary, Treasurer, Secretary for Mobilization, Secretary for Discipline, Secretary for Loans, Secretary for Public Relations, and a Secretary without Portfolio.</p>
+          <p>Term: five (5) years; re‑election allowed. Inactive officers may be relieved and replaced per provisions, with right of appeal.</p>
+          <h3>Key Roles (high‑level)</h3>
+          <ul>
+            <li><strong>Chairperson:</strong> Leadership, administration, planning, supervision, meetings, resource management.</li>
+            <li><strong>Vice Chairperson:</strong> Deputizes Chairperson; duties as assigned.</li>
+            <li><strong>General Secretary:</strong> Records, meetings, minutes, admin support.</li>
+            <li><strong>Treasurer:</strong> Custody of funds/valuables; financial records; admin support.</li>
+            <li><strong>Mobilization:</strong> Member & resource mobilization; fundraising.</li>
+            <li><strong>Discipline:</strong> Order, adherence to rules; enforce actions on defaulters.</li>
+            <li><strong>Loans:</strong> Administer micro‑loan scheme; ensure compliance; advise on discipline for defaulters.</li>
+            <li><strong>Public Relations:</strong> Communications, networking, lobbying; admin support.</li>
+            <li><strong>Without Portfolio:</strong> Additional admin support.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Article VIII – Meetings</summary>
+          <ul>
+            <li>Regular monthly meetings (last Thursday), scheduled by the General Secretary and notified by the Secretary for Mobilization.</li>
+            <li>Chaired by the Chairperson unless otherwise.</li>
+            <li>Quorum: six (6) for executive meeting; sixteen (16) for general group meeting.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Article IX – Advisors</summary>
+          <ul>
+            <li>Three (3) technical advisors (ex‑officio, no voting privileges): Parish Chief, Community Development Officer, and a CSO representative.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Article X – Amendments</summary>
+          <ul>
+            <li>Amendments at most twice within each five‑year executive term.</li>
+            <li>Requires ≥ 80% majority of voting members present.</li>
+            <li>Discuss in executive committee first, then ratify in general meeting.</li>
+            <li>Mass amendments limited to ≤ 10 sections per term; amending an entire article is prohibited.</li>
+            <li>All amendments must align with group priorities and Ugandan law.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Article XI – Dissolution</summary>
+          <ul>
+            <li>Dissolution by agreement of <em>all</em> group members in a general meeting.</li>
+            <li>Upon dissolution: sell assets; share proceeds and savings equitably among members.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section id="profile">
+      <div class="card">
+        <h2>Group Profile</h2>
+        <p><strong>Name:</strong> Open Hope Charities Group</p>
+        <p><strong>Location:</strong> Kabarwa Parish, Kabarwa Sub‑County, Bukedea District</p>
+        <p><strong>Started:</strong> April 2020</p>
+        <p><strong>Coverage:</strong> Kabarwa Sub‑County; membership drawn from the village</p>
+        <p><strong>Vision (Profile):</strong> A Transformed and Prosperous Community by 2040</p>
+        <p><strong>Mission:</strong> To fight poverty and improve standards of living for socio‑economic transformation.</p>
+        <h3>Background</h3>
+        <p>A member introduced community‑managed micro‑credit and self‑help low‑cost construction of worship centers. Recognizing development gaps, 15 community members initiated Open Hope Charities Group on 1/04/2020. The group comprises 15 committed members (from 15 households) and a growing scheme. With crop/animal production challenges affecting basic needs (food, clothing, bedding, housing, basic health care, education), the group aims to bridge the gap through cohesion, income‑generating activities, lobbying for mosques, clean water sources, and proper Islamic child upbringing.</p>
+        <p><strong>Membership:</strong> 15 members (with a provision up to 30 members).</p>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <div class="card">
+        <h2>Leadership Structure</h2>
+        <table>
+          <thead>
+            <tr><th>#</th><th>Name</th><th>Position</th><th>Contact</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Muwanguzi Jude</td><td>Chairperson</td><td>0701 088 585</td></tr>
+            <tr><td>2</td><td>Waningha Emmanuel</td><td>Vice Chairperson</td><td>0772 053 603</td></tr>
+            <tr><td>3</td><td>Wanyama Sezi</td><td>Secretary</td><td>0789 400 888</td></tr>
+            <tr><td>4</td><td>Mukhwana Solomon</td><td>Treasurer</td><td>0760 047 416</td></tr>
+            <tr><td>5</td><td>Akia Winnie</td><td>Coordinator</td><td>0762 322 985</td></tr>
+            <tr><td>6</td><td>Akello Barabara</td><td>Member</td><td>0785 907 227</td></tr>
+            <tr><td>7</td><td>Mutesi Shadia</td><td>Member</td><td>0782 796 422</td></tr>
+            <tr><td>8</td><td>Opolot Shaban</td><td>Member</td><td>0779 297 569</td></tr>
+            <tr><td>9</td><td>Emurot Juma</td><td>Member</td><td>0779 587 155</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="registration">
+      <div class="card">
+        <h2>Registration & Recognition</h2>
+        <ul>
+          <li><strong>Authority:</strong> Kabarwa Sub‑County Local Government, Community Development Office (Bukedea District Administration).</li>
+          <li><strong>Status:</strong> Community‑Based Organization (CBO).</li>
+          <li><strong>Renewal:</strong> Certificate of group registration renewed on <strong>21 October 2022</strong> (valid 12 months from issue; renewable upon submission of quarterly reports).</li>
+          <li><strong>Registered Activities:</strong>
+            <ol>
+              <li>Tree planting</li>
+              <li>Implementing income‑generating activities</li>
+              <li>Resource pooling into a sustainable saving scheme</li>
+              <li>Community mobilization and sensitization</li>
+              <li>Lobby for funds to build conducive praying areas</li>
+            </ol>
+          </li>
+        </ul>
+        <p>Includes introductions/recommendations by local leadership (LC1 Chairperson) to support registration processes.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="grid cols-2">
+        <div class="card">
+          <h2>Contacts</h2>
+          <p><strong>Address:</strong> Kabarwa Parish, Kabarwa Sub‑County, Bukedea District</p>
+          <p><strong>Postal:</strong> C/o P.O. Box 5026, Bukedea</p>
+          <p><strong>Phone:</strong> <a href="tel:+256773052417">0773 052 417</a></p>
+        </div>
+        <div class="card">
+          <h2>Declaration</h2>
+          <p>We, the members of Open Hope Charities Group, acknowledge responsibility for the content of this constitution and commit to upholding, protecting and preserving it. <em>Dated: 1 April 2020.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <a class="toplink" href="#home" aria-label="Back to top">↑ Top</a>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© Open Hope Charities • Love • Share • Care</p>
+      <p>Built as a school project static site. Print this page for a clean hardcopy version.</p>
+    </div>
+  </footer>
+</body>
+</html>
